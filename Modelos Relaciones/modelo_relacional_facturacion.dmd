@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_relacional_facturacion" id="38CA12C0-6420-80E4-E5A4-2F8230A63550" version="3.5">
+<createdBy>Konqueror</createdBy>
+<createdTime>2015-05-27 17:35:46 UTC</createdTime>
+<ownerDesignName>modelo_relacional_facturacion</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>38CA12C0-6420-80E4-E5A4-2F8230A63550</designId>
+</OSDM_Design>
