@@ -65,7 +65,7 @@
 <colUsage columnID="672697C1-6DAB-B59C-3440-70D7FB5632C1"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2C9BE707-AC26-4721-FD11-ACC3A69DCA79" name="CODIGO_PRODUCTO_FK">
+<ind_PK_UK id="2C9BE707-AC26-4721-FD11-ACC3A69DCA79" name="CODIGO_FACTURA_X_PRODUCTO_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-05-29 17:32:23 UTC</createdTime>
 <ownerDesignName>modelo_relacional_facturacion</ownerDesignName>
