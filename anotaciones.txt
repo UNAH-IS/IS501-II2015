@@ -1,0 +1,51 @@
+Usuarios y Esquemas en Oracle
+Usuario = Esquema
+Ejemplo: System, Sys
+Un usuario o esquema puede contener sus propios objetos de base de datos, es decir tablas, vistas, procesos, etc.
+Una base de datos en Oracle es una instalación, cada vez que se necesite una nueva base de datos se debe crear una nueva instancia (instalacion) con un nuevo puerto y un nuevo SID (Service ID)
+
+
+Pasos para replicar un modelo relacional a la base de datos
+***Data Modeler.
+Descargar el modelo.
+Abrir el sqldeveloper
+View->Data Modeler->Browser
+File->Data Modeler->Open: Buscar archivo dmd
+
+***Entrar a la base de datos.
+Abrir sqldeveloper
+Crear una nueva conexion con System (password oracle).
+Crear un esquema o usuario (script).
+Crear una nueva conexion con el nuevo usuario.
+
+***Replicar modelo a la BD
+Generar DDL desde el data modeler (Generate DDL)
+Copiar el script y lo ejecutan desde un worksheet de la conexion con el nuevo usuario.
+
+
+//DDL - Data Definition Language 
+//DML - Data Manipulation Language
+//QL  - Consultas
+
+Insertar un registro a la base de datos.
+Sintaxis basica: 
+INSERT INTO ESQUEMA.TABLA (CAMPOS)
+VALUES (VALORES);
+
+Ejemplo: 
+INSERT INTO TBL_CLIENTES (
+	CODIGO_CLIENTE, 
+	NOMBRE_CLIENTE,
+	APELLIDO_CLIENTE, 
+	GENERO) 
+VALUES (1, 'Juan', 'Perez', 'M');
+
+
+
+Integridad referencial:
+Restringir las columnas que hacen referencia a otra tabla de tal forma que impida agregar un registro que no existe dicha tabla.
+
+
+
+
+

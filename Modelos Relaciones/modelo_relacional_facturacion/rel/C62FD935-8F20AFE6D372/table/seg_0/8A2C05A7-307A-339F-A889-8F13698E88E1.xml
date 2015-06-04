@@ -4,6 +4,7 @@
 <createdTime>2015-05-29 04:01:22 UTC</createdTime>
 <ownerDesignName>modelo_relacional_facturacion</ownerDesignName>
 <abbreviation>SUCURSAL</abbreviation>
+<schemaObject>D8D9DA77-7289-4D89-92B6-B0919CEF5FE6</schemaObject>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
