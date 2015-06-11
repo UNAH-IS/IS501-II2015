@@ -4,6 +4,7 @@
 <createdTime>2015-06-03 17:43:07 UTC</createdTime>
 <ownerDesignName>modelo_relacional_facturacion</ownerDesignName>
 <abbreviation>UNIDADES_MEDIDA</abbreviation>
+<schemaObject>D8D9DA77-7289-4D89-92B6-B0919CEF5FE6</schemaObject>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
