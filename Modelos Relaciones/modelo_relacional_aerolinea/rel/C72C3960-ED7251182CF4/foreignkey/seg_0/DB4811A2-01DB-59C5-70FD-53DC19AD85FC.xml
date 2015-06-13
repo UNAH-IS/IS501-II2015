@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F189D75-DF03-8083-CD9E-F117B75E13B6" containerWithKeyObject="F5661F76-B66D-6EBE-3B42-0E80D75E94C8" localFKIndex="A3503D62-7C8C-A651-7C78-6601A0CDC673" name="TBL_FACTURAS_TICKETS_TBL_PASAJEROS_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DB4811A2-01DB-59C5-70FD-53DC19AD85FC" containerWithKeyObject="487733F9-6C0F-BF74-253E-61918CA32861" localFKIndex="6C7CBFC8-2797-98E3-0492-074D4D793D53" name="TBL_FD_TBL_P_FK">
 <createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:46:47 UTC</createdTime>
+<createdTime>2015-06-11 17:17:26 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>441AEE12-D28F-AE38-B96B-B822B0DA5381</referredTableID>

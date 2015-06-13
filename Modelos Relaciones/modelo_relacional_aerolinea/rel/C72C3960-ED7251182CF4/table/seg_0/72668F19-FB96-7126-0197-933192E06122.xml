@@ -3,6 +3,7 @@
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 03:23:54 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
+<schemaObject>736E312B-6B9F-9999-CD1F-691C10BD74F0</schemaObject>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">

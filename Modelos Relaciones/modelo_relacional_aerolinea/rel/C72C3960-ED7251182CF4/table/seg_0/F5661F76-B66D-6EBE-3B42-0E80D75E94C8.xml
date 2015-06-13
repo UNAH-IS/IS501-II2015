@@ -1,8 +1,9 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5661F76-B66D-6EBE-3B42-0E80D75E94C8" name="TBL_FACTURAS_TICKETS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F5661F76-B66D-6EBE-3B42-0E80D75E94C8" name="TBL_FACTURAS">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-10 17:39:36 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
+<schemaObject>736E312B-6B9F-9999-CD1F-691C10BD74F0</schemaObject>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
@@ -13,16 +14,6 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="TICKET" id="B4360A81-1CA6-C2F1-CCA5-0F0FA1A7B892">
-<createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:41:19 UTC</createdTime>
-<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="COSTO_TOTAL" id="ED760278-4298-4642-0CA0-7DCBC2B8CBDA">
@@ -62,45 +53,6 @@
 <dataTypeSize>1</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CODIGO_PASAJERO" id="1A75F9E2-CFC0-3E14-2D1F-873586109894">
-<createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:46:47 UTC</createdTime>
-<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="3F189D75-DF03-8083-CD9E-F117B75E13B6" referredColumn="61DA9C76-090F-E29A-33C6-DE9F99A59925"/>
-</associations>
-</Column>
-<Column name="CODIGO_CLASE" id="F56F8074-7727-416C-20A5-4A0DBD63081C">
-<createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:47:04 UTC</createdTime>
-<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4D629B99-6F94-37C7-0408-D50FA8603AA8" referredColumn="340D5770-7A88-9DBB-160B-0DDAF31AB6EE"/>
-</associations>
-</Column>
-<Column name="CODIGO_VUELO" id="77E32095-CDB7-3CC4-B69C-527933D3A9BD">
-<createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:49:37 UTC</createdTime>
-<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="DED8678A-FEA4-E0E1-A897-97ABE82B6E2E" referredColumn="25AC125B-0281-B2AE-7CED-833219D3AA07"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="35B2618F-A916-7B51-FE08-B482BC3F000D" name="TBL_FACTURAS_TICKETS_PK">
@@ -112,36 +64,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="D11A72D1-04F2-B9FC-3C5E-794D710BF319"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="A3503D62-7C8C-A651-7C78-6601A0CDC673" name="TBL_FACTURAS_TICKETS_TBL_PASAJEROS_FK">
-<createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:46:47 UTC</createdTime>
-<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="1A75F9E2-CFC0-3E14-2D1F-873586109894"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="C61FFA08-F02E-EE57-BB97-8E11A0340F11" name="TBL_FACTURAS_TICKETS_TBL_CLASES_SOCIALES_FK">
-<createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:47:04 UTC</createdTime>
-<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="F56F8074-7727-416C-20A5-4A0DBD63081C"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="FF0A193D-8F20-F192-D4A4-E51C3E51851C" name="TBL_FACTURAS_TICKETS_TBL_VUELOS_FK">
-<createdBy>Konqueror</createdBy>
-<createdTime>2015-06-10 17:49:37 UTC</createdTime>
-<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="77E32095-CDB7-3CC4-B69C-527933D3A9BD"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
