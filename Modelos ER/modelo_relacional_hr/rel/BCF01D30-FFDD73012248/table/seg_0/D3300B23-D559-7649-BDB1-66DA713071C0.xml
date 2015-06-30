@@ -1,0 +1,334 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3300B23-D559-7649-BDB1-66DA713071C0" name="EMPLOYEES">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMPLOYEES</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>employees table. Contains 107 rows. References with departments,&lt;br/&gt;jobs, job_history tables. Contains a self reference.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="CEF7BDB6-F9E1-BAF2-B45D-902E07A816DB">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Primary key of employees table.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="FF901456-EDB9-9F35-65A1-8381040E6A26">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>First name of the employee. A not null column.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="FC09F1C9-7B24-8ECF-99CF-443D3ABB7672">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Last name of the employee. A not null column.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_LAST_NAME_NN</notNullConstraintName>
+</Column>
+<Column name="EMAIL" id="DED7577F-64FE-5BC4-274D-AF382221703C">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Email id of the employee</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_EMAIL_NN</notNullConstraintName>
+</Column>
+<Column name="PHONE_NUMBER" id="249158ED-C234-F452-B4DA-E083B5BD3150">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Phone number of the employee; includes country code and area code</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIRE_DATE" id="CCFCCCAF-6EC7-F53B-8CA5-03CCE56FA586">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>HIRE_DATE</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Date when the employee started on this job. A not null column.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_HIRE_DATE_NN</notNullConstraintName>
+</Column>
+<Column name="JOB_ID" id="E8CB162C-0A19-BC52-8C65-2AEA20E6273C">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Current job of the employee; foreign key to job_id column of the&lt;br/&gt;jobs table. A not null column.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>EMP_JOB_NN</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="E3120A15-C1E0-051B-B693-29183A9A8EB0" referredColumn="F5D8EEE2-F49B-5559-A7C3-40AE6FF1BC49"/>
+</associations>
+</Column>
+<Column name="SALARY" id="09600864-954D-0426-E6F7-13309A060A42">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Monthly salary of the employee. Must be greater&lt;br/&gt;than zero (enforced by constraint emp_salary_min)</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<constraintName>EMP_SALARY_MIN</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="salary &gt; 0"/>
+</checkConstraint>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="DFCAE5CB-8D09-1A90-54F0-BAFCBA96797B">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>COMMISSION_PCT</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Commission percentage of the employee; Only employees in sales&lt;br/&gt;department elgible for commission percentage</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="E19635C7-CEC4-B676-62ED-5A1EADF84C86">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Manager id of the employee; has same domain as manager_id in&lt;br/&gt;departments table. Foreign key to employee_id column of employees table.&lt;br/&gt;(useful for reflexive joins and CONNECT BY query)</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1537BE24-E31D-5D1E-826B-F108CF8460BF" referredColumn="CEF7BDB6-F9E1-BAF2-B45D-902E07A816DB"/>
+</associations>
+</Column>
+<Column name="DEPARTMENT_ID" id="338CFA01-1168-D797-3B77-1614FC1A8A5F">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>EMPLOYEES</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Department id where employee works; foreign key to department_id&lt;br/&gt;column of the departments table</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="93BB7DC3-BDAD-9571-7DD3-6ECA7D9A3D90" referredColumn="8A6C8E41-A858-F347-DDA0-B3F8C414BC50"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FCFD3588-2D21-7381-B571-94D2CAA6ACD5" name="EMP_EMP_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMP_ID_PK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEF7BDB6-F9E1-BAF2-B45D-902E07A816DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4F56E68-E2DD-8026-308E-E577E1574BF9" name="EMP_EMAIL_UK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMAIL_UK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DED7577F-64FE-5BC4-274D-AF382221703C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4A8D282-E90F-62AC-34C8-B2D9A737A5B6" name="EMP_EMAIL_UK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMAIL_UK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DED7577F-64FE-5BC4-274D-AF382221703C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F598FED7-1183-8410-0768-570C691CFB3D" name="EMP_EMP_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_EMP_ID_PK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEF7BDB6-F9E1-BAF2-B45D-902E07A816DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE5DFB6B-6CAF-AE00-E3B9-15D12E074DB5" name="EMP_DEPARTMENT_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_DEPARTMENT_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="338CFA01-1168-D797-3B77-1614FC1A8A5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F10FCD9-EBAD-090E-8866-6B2A634C0122" name="EMP_JOB_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_JOB_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8CB162C-0A19-BC52-8C65-2AEA20E6273C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDC601AB-60B9-261E-4C6F-44B3FE069570" name="EMP_MANAGER_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_MANAGER_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E19635C7-CEC4-B676-62ED-5A1EADF84C86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6154727-874C-721D-5CA7-BA986DDECC6C" name="EMP_NAME_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>EMP_NAME_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC09F1C9-7B24-8ECF-99CF-443D3ABB7672"/>
+<colUsage columnID="FF901456-EDB9-9F35-65A1-8381040E6A26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5367B5C-DA66-9DDF-7E12-225BF6EBEC15" name="EMP_DEPT_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="338CFA01-1168-D797-3B77-1614FC1A8A5F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0961E6E1-5C78-95B6-DC37-79D2766F2CDD" name="EMP_JOB_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8CB162C-0A19-BC52-8C65-2AEA20E6273C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB35916F-CE22-CE37-C3BC-D76892905156" name="EMP_MANAGER_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E19635C7-CEC4-B676-62ED-5A1EADF84C86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

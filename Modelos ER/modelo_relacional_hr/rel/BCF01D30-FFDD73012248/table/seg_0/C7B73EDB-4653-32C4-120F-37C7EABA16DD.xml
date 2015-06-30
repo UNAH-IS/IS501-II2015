@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7B73EDB-4653-32C4-120F-37C7EABA16DD" name="JOB_HISTORY">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JOB_HISTORY</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Table that stores job history of the employees. If an employee&lt;br/&gt;changes departments within the job or changes jobs within the department,&lt;br/&gt;new rows get inserted into this table with old job information of the&lt;br/&gt;employee. Contains a complex primary key: employee_id+start_date.&lt;br/&gt;Contains 25 rows. References with jobs, employees, and departments tables.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="C81E3CE8-F68C-0441-65DF-37F275F4699C">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>A not null column in the complex primary key employee_id+start_date.&lt;br/&gt;Foreign key to employee_id column of the employee table</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_EMPLOYEE_NN</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="2DC5005B-6229-64E2-599B-0311F8C7B749" referredColumn="CEF7BDB6-F9E1-BAF2-B45D-902E07A816DB"/>
+</associations>
+</Column>
+<Column name="START_DATE" id="9B0E43C0-E8A9-B84D-DA88-F19363B52323">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>START_DATE</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>A not null column in the complex primary key employee_id+start_date.&lt;br/&gt;Must be less than the end_date of the job_history table. (enforced by&lt;br/&gt;constraint jhist_date_interval)</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_START_DATE_NN</notNullConstraintName>
+</Column>
+<Column name="END_DATE" id="F877F680-1E94-150D-7BA1-C902F971CA2A">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>END_DATE</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Last day of the employee in this job role. A not null column. Must be&lt;br/&gt;greater than the start_date of the job_history table.&lt;br/&gt;(enforced by constraint jhist_date_interval)</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_END_DATE_NN</notNullConstraintName>
+</Column>
+<Column name="JOB_ID" id="D0F15FBF-21F2-4390-9320-3215805261E4">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Job role in which the employee worked in the past; foreign key to&lt;br/&gt;job_id column in the jobs table. A not null column.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>JHIST_JOB_NN</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="9B5739A5-D678-3CA7-AE1B-646401764576" referredColumn="F5D8EEE2-F49B-5559-A7C3-40AE6FF1BC49"/>
+</associations>
+</Column>
+<Column name="DEPARTMENT_ID" id="409E8F52-2571-A019-20F2-3429EDB4BFC4">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>JOB_HISTORY</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Department id in which the employee worked in the past; foreign key to deparment_id column in the departments table</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F76A75C4-5503-27C4-EE13-A6D6333BA0A5" referredColumn="8A6C8E41-A858-F347-DDA0-B3F8C414BC50"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F85A085C-E87F-664D-15B7-CC427E65C733" name="JHIST_EMP_ID_ST_DATE_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_EMP_ID_ST_DATE_PK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C81E3CE8-F68C-0441-65DF-37F275F4699C"/>
+<colUsage columnID="9B0E43C0-E8A9-B84D-DA88-F19363B52323"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="216FFB14-F6D8-8B4A-AD64-05ED3DD0ADFF" name="JHIST_EMP_ID_ST_DATE_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_EMP_ID_ST_DATE_PK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C81E3CE8-F68C-0441-65DF-37F275F4699C"/>
+<colUsage columnID="9B0E43C0-E8A9-B84D-DA88-F19363B52323"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFB90DD0-C03C-B2BB-7E3D-B38B10251137" name="JHIST_JOB_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_JOB_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0F15FBF-21F2-4390-9320-3215805261E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2AA8476-AD13-5F00-133E-79636F75C8CA" name="JHIST_EMPLOYEE_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_EMPLOYEE_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C81E3CE8-F68C-0441-65DF-37F275F4699C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CBA3E07-0161-411D-526F-89C0F1AB915A" name="JHIST_DEPARTMENT_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_DEPARTMENT_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="409E8F52-2571-A019-20F2-3429EDB4BFC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D68D694-CDD6-8C53-AC07-8464979969C9" name="JHIST_DEPT_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="409E8F52-2571-A019-20F2-3429EDB4BFC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EA0C52A-1DFD-7F09-3AE1-C2A43F900DDE" name="JHIST_EMP_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C81E3CE8-F68C-0441-65DF-37F275F4699C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8485235C-A524-2C18-5898-01C466103110" name="JHIST_JOB_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D0F15FBF-21F2-4390-9320-3215805261E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="JHIST_DATE_INTERVAL" directorySegmentName="seg_0" id="AA79A95C-9C6E-3F6E-EB76-BABD685D89AA">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>JHIST_DATE_INTERVAL</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<rule>end_date &gt; start_date</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

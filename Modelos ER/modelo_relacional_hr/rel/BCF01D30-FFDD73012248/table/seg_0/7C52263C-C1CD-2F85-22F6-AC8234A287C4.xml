@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C52263C-C1CD-2F85-22F6-AC8234A287C4" name="DEPARTMENTS">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPARTMENTS</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:52 UTC</createdTime>
+<commentInRDBMS>Departments table that shows details of departments where employees&lt;br/&gt;work. Contains 27 rows; references with locations, employees, and job_history tables.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPARTMENT_ID" id="8A6C8E41-A858-F347-DDA0-B3F8C414BC50">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Primary key column of departments table.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_NAME" id="94464888-DD80-0563-D146-A10B09CBDCED">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>DEPARTMENT_NAME</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>A not null column that shows name of a department. Administration,&lt;br/&gt;Marketing, Purchasing, Human Resources, Shipping, IT, Executive, Public&lt;br/&gt;Relations, Sales, Finance, and Accounting. </commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>DEPT_NAME_NN</notNullConstraintName>
+</Column>
+<Column name="MANAGER_ID" id="291FA7FE-70DE-1579-3E36-82994EAA1A4A">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Manager_id of a department. Foreign key to employee_id column of employees table. The manager_id column of the employee table references this column.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="556CB93F-DFDB-FDB7-41A7-F1F5C69526AD" referredColumn="CEF7BDB6-F9E1-BAF2-B45D-902E07A816DB"/>
+</associations>
+</Column>
+<Column name="LOCATION_ID" id="7596FF6F-42CE-173E-4CAA-6FECC16F8F14">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>DEPARTMENTS</sourceObjSchema>
+<sourceObjName>LOCATION_ID</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<commentInRDBMS>Location id where a department is located. Foreign key to location_id column of locations table.</commentInRDBMS>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3827AE09-AD57-F995-EE8F-DBC043197383" referredColumn="19BEC9C3-CE78-130E-E751-D15EE1B88C44"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDF14515-FDE1-DE92-6011-FC8E15896A7A" name="DEPT_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A6C8E41-A858-F347-DDA0-B3F8C414BC50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B38D791E-5A6F-6C8F-F173-D29785AB1F59" name="DEPT_ID_PK">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_ID_PK</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A6C8E41-A858-F347-DDA0-B3F8C414BC50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF97646E-2ADA-B00F-0536-F28D3CD40533" name="DEPT_LOCATION_IX">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>DEPT_LOCATION_IX</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:53 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7596FF6F-42CE-173E-4CAA-6FECC16F8F14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C32D740-397E-C5E8-DAD1-4EF9D763E15E" name="DEPT_LOC_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7596FF6F-42CE-173E-4CAA-6FECC16F8F14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74638B68-A7CC-57E6-5960-5F11EC562B66" name="DEPT_MGR_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:54 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="291FA7FE-70DE-1579-3E36-82994EAA1A4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="HR" directorySegmentName="seg_0" id="CD9868DC-F8A1-D87B-4DB4-EE5EDC64E534">
+<sourceConnName>Conexion HR</sourceConnName>
+<sourceObjName>HR</sourceObjName>
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-26 17:09:52 UTC</createdTime>
+<ownerDesignName>modelo_relacional_hr</ownerDesignName>
+<schemaObject>8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64</schemaObject>
+</UserOraclev10g>

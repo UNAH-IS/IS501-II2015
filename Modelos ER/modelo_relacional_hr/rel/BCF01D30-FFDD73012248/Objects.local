@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="SchemaObject" objectID="8D8C497A-29C8-5BAF-BB03-6B66BD4BBB64" name="HR" seqName="seg_0"/>
+   <object objectType="Table" objectID="17F838C7-5E9A-2CF4-4D62-4F38654CB4B9" name="COUNTRIES" seqName="seg_0"/>
+   <object objectType="Table" objectID="7C52263C-C1CD-2F85-22F6-AC8234A287C4" name="DEPARTMENTS" seqName="seg_0"/>
+   <object objectType="Table" objectID="D3300B23-D559-7649-BDB1-66DA713071C0" name="EMPLOYEES" seqName="seg_0"/>
+   <object objectType="Table" objectID="D02A3710-AE60-1C85-A2CD-18B1359EED1E" name="JOBS" seqName="seg_0"/>
+   <object objectType="Table" objectID="C7B73EDB-4653-32C4-120F-37C7EABA16DD" name="JOB_HISTORY" seqName="seg_0"/>
+   <object objectType="Table" objectID="73CD1688-449E-49CC-99A5-12E036074B10" name="LOCATIONS" seqName="seg_0"/>
+   <object objectType="Table" objectID="DE6DAFE1-2C06-37BA-1D74-8E958BC8E796" name="REGIONS" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="F3867166-C9F9-76DD-1717-250F8C7BA5C0" name="COUNTR_REG_FK" seqName="seg_0" containerID="17F838C7-5E9A-2CF4-4D62-4F38654CB4B9" refContainerID="DE6DAFE1-2C06-37BA-1D74-8E958BC8E796"/>
+   <object objectType="FKIndexAssociation" objectID="3827AE09-AD57-F995-EE8F-DBC043197383" name="DEPT_LOC_FK" seqName="seg_0" containerID="7C52263C-C1CD-2F85-22F6-AC8234A287C4" refContainerID="73CD1688-449E-49CC-99A5-12E036074B10"/>
+   <object objectType="FKIndexAssociation" objectID="556CB93F-DFDB-FDB7-41A7-F1F5C69526AD" name="DEPT_MGR_FK" seqName="seg_0" containerID="7C52263C-C1CD-2F85-22F6-AC8234A287C4" refContainerID="D3300B23-D559-7649-BDB1-66DA713071C0"/>
+   <object objectType="FKIndexAssociation" objectID="93BB7DC3-BDAD-9571-7DD3-6ECA7D9A3D90" name="EMP_DEPT_FK" seqName="seg_0" containerID="D3300B23-D559-7649-BDB1-66DA713071C0" refContainerID="7C52263C-C1CD-2F85-22F6-AC8234A287C4"/>
+   <object objectType="FKIndexAssociation" objectID="E3120A15-C1E0-051B-B693-29183A9A8EB0" name="EMP_JOB_FK" seqName="seg_0" containerID="D3300B23-D559-7649-BDB1-66DA713071C0" refContainerID="D02A3710-AE60-1C85-A2CD-18B1359EED1E"/>
+   <object objectType="FKIndexAssociation" objectID="1537BE24-E31D-5D1E-826B-F108CF8460BF" name="EMP_MANAGER_FK" seqName="seg_0" containerID="D3300B23-D559-7649-BDB1-66DA713071C0" refContainerID="D3300B23-D559-7649-BDB1-66DA713071C0"/>
+   <object objectType="FKIndexAssociation" objectID="F76A75C4-5503-27C4-EE13-A6D6333BA0A5" name="JHIST_DEPT_FK" seqName="seg_0" containerID="C7B73EDB-4653-32C4-120F-37C7EABA16DD" refContainerID="7C52263C-C1CD-2F85-22F6-AC8234A287C4"/>
+   <object objectType="FKIndexAssociation" objectID="2DC5005B-6229-64E2-599B-0311F8C7B749" name="JHIST_EMP_FK" seqName="seg_0" containerID="C7B73EDB-4653-32C4-120F-37C7EABA16DD" refContainerID="D3300B23-D559-7649-BDB1-66DA713071C0"/>
+   <object objectType="FKIndexAssociation" objectID="9B5739A5-D678-3CA7-AE1B-646401764576" name="JHIST_JOB_FK" seqName="seg_0" containerID="C7B73EDB-4653-32C4-120F-37C7EABA16DD" refContainerID="D02A3710-AE60-1C85-A2CD-18B1359EED1E"/>
+   <object objectType="FKIndexAssociation" objectID="C351E2A7-9BF1-017A-D603-436F25B04F75" name="LOC_C_ID_FK" seqName="seg_0" containerID="73CD1688-449E-49CC-99A5-12E036074B10" refContainerID="17F838C7-5E9A-2CF4-4D62-4F38654CB4B9"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>
