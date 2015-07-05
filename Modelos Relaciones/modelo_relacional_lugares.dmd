@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo_relacional_lugares" id="AB8A8690-C024-1C47-D1C9-3B99596A074A" version="3.5">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 04:55:35 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>AB8A8690-C024-1C47-D1C9-3B99596A074A</designId>
+</OSDM_Design>

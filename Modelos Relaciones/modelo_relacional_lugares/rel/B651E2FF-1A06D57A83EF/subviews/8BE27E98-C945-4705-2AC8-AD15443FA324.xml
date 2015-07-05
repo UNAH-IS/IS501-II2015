@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="8BE27E98-C945-4705-2AC8-AD15443FA324">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 04:55:45 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="07EB8191-6DF4-9814-D1E9-1D34DD030E1A" otype="Table" vid="2DBBF325-E1EA-2B76-8B69-B594DD6ACBB0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="349" y="282" width="272" height="111"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="23BE822E-3987-7876-604E-032E7DF1119A" otype="Table" vid="AACBE847-1AAF-22B2-A1C1-520063CB8770">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="23" y="72" width="233" height="80"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="56EE0144-2A98-DC0B-ECAD-4995F6CA1CEF" otype="Table" vid="CC6F656E-6036-6AC4-4C20-3F11E08E7F8E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="330" y="77" width="244" height="105"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="0F9B6347-16FD-FFDA-CAC3-D710FC25B816" otype="FKIndexAssociation" vid_source="CC6F656E-6036-6AC4-4C20-3F11E08E7F8E" vid_target="2DBBF325-E1EA-2B76-8B69-B594DD6ACBB0">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="461" y="182"/>
+<point x="461" y="282"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="FA414F0D-C2DF-3FB7-FABE-73DEBF55451C" otype="FKIndexAssociation" vid_source="AACBE847-1AAF-22B2-A1C1-520063CB8770" vid_target="CC6F656E-6036-6AC4-4C20-3F11E08E7F8E">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="256" y="114"/>
+<point x="330" y="114"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

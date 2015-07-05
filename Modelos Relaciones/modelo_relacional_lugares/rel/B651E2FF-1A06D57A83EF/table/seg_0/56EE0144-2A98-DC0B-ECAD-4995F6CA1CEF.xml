@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56EE0144-2A98-DC0B-ECAD-4995F6CA1CEF" name="TBL_PAISES">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 04:58:23 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_PAIS" id="7D858347-5D48-6BA8-A851-9A69EE20A4DC">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:00:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_PAIS" id="D58F8DED-9BF8-2ADD-EF3F-F5C2C98A69A3">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:00:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_REGION" id="8E679BFD-2190-8FB8-B4FF-203FCA16DA63">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:03:46 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA414F0D-C2DF-3FB7-FABE-73DEBF55451C" referredColumn="F94C3C66-6F25-C78F-5EF3-F002387F8E66"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="504A89B9-68A1-5FB4-9B81-49E7214C4360" name="TBL_PAISES_PK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:00:24 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D858347-5D48-6BA8-A851-9A69EE20A4DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C88FF91-90C7-5B19-EA02-FEBCDB08A18F" name="TBL_PAISES_TBL_REGIONES_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:03:46 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E679BFD-2190-8FB8-B4FF-203FCA16DA63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="07EB8191-6DF4-9814-D1E9-1D34DD030E1A" name="TBL_LUGARES" seqName="seg_0"/>
+   <object objectType="Table" objectID="56EE0144-2A98-DC0B-ECAD-4995F6CA1CEF" name="TBL_PAISES" seqName="seg_0"/>
+   <object objectType="Table" objectID="23BE822E-3987-7876-604E-032E7DF1119A" name="TBL_REGIONES" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="FA414F0D-C2DF-3FB7-FABE-73DEBF55451C" name="TBL_PAISES_TBL_REGIONES_FK" seqName="seg_0" containerID="56EE0144-2A98-DC0B-ECAD-4995F6CA1CEF" refContainerID="23BE822E-3987-7876-604E-032E7DF1119A"/>
+   <object objectType="FKIndexAssociation" objectID="0F9B6347-16FD-FFDA-CAC3-D710FC25B816" name="TBL_LUGARES_TBL_PAISES_FK" seqName="seg_0" containerID="07EB8191-6DF4-9814-D1E9-1D34DD030E1A" refContainerID="56EE0144-2A98-DC0B-ECAD-4995F6CA1CEF"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

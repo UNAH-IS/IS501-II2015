@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="68E36BF2-60B1-1C8F-C7EB-501DC610F169">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 04:55:36 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D999C122-4DF9-BE86-DE33-8198C93CF8FB" mainViewID="050ED76E-0E60-5F22-8823-9C2B6789D8D0">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 04:55:35 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

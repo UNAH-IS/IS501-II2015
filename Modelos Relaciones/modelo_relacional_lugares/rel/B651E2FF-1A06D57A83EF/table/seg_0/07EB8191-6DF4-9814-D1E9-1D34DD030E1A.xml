@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07EB8191-6DF4-9814-D1E9-1D34DD030E1A" name="TBL_LUGARES">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:01:56 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODIGO_LUGAR" id="EFB4D533-7A88-4A7F-0578-7D31F98A8D87">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:02:42 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_LUGAR" id="FEDABA7C-4838-4752-56BD-1E9C358FE244">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:02:42 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>130</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_PAIS" id="50786E72-6E4E-B95C-80B0-75032DDAA60E">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:03:39 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F9B6347-16FD-FFDA-CAC3-D710FC25B816" referredColumn="7D858347-5D48-6BA8-A851-9A69EE20A4DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA863D8B-758C-8584-B3D6-C0D177CF7A12" name="TBL_LUGARES_PK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:02:42 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFB4D533-7A88-4A7F-0578-7D31F98A8D87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3ADD691-5E68-F57C-2702-6DA029B11B20" name="TBL_LUGARES_TBL_PAISES_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-06-30 05:03:39 UTC</createdTime>
+<ownerDesignName>modelo_relacional_lugares</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50786E72-6E4E-B95C-80B0-75032DDAA60E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
