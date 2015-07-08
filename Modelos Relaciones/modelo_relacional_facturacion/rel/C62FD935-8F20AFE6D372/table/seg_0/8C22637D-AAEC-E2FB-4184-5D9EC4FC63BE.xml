@@ -52,6 +52,15 @@
 <dataTypeSize>100</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="MONTO_VENTA" id="93333EC2-936C-E680-676D-627CEECB9350">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-07-05 21:00:19 UTC</createdTime>
+<ownerDesignName>modelo_relacional_facturacion</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="B65FA1DB-9B54-922A-D43F-C44A4A23D649" name="TBL_PRODUCTOS_X_FACTURA_PK">
