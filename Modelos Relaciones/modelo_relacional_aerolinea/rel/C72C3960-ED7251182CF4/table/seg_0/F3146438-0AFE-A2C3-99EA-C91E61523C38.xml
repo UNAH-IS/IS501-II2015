@@ -75,7 +75,7 @@
 <colUsage columnID="E9C7627D-8D09-9A11-7AF3-7C490D6A0C1A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="13653ADA-196C-83CF-0772-E9B26C3CA9E9" name="TBL_AVIONES_TBL_MARCAS_FK">
+<ind_PK_UK id="13653ADA-196C-83CF-0772-E9B26C3CA9E9" name="TBL_AVIONES_TBL_MAR_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:35:27 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
@@ -85,7 +85,7 @@
 <colUsage columnID="42A01F31-20B3-8B33-B58B-ED8C93702BDE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="2652E510-97A7-5BB2-6D1A-52200B70FBFB" name="TBL_AVIONES_TBL_MODELOS_FK">
+<ind_PK_UK id="2652E510-97A7-5BB2-6D1A-52200B70FBFB" name="TBL_AVIONES_TBL_MOD_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:35:52 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>

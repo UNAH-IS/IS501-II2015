@@ -57,7 +57,7 @@
 <colUsage columnID="E580C423-5F1E-5A1C-069D-5023A0B806B6"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F8BF7915-3D88-1222-72A4-AFF0D820AE48" name="TBL_PUNTOS_X_RUTAS_TBL_RUTAS_FK">
+<ind_PK_UK id="F8BF7915-3D88-1222-72A4-AFF0D820AE48" name="TBL_P_X_R_TBL_R_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:54:49 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
@@ -67,7 +67,7 @@
 <colUsage columnID="AAA8C821-D11A-EE85-B2AD-439845CFE617"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="ECC6F1B6-7362-4E60-B02F-1E19CB1E9DFC" name="TBL_PUNTOS_X_RUTAS_TBL_PUNTO_ESCALA_FK">
+<ind_PK_UK id="ECC6F1B6-7362-4E60-B02F-1E19CB1E9DFC" name="TBL_P_X_R_TBL_P_E_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:54:56 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>

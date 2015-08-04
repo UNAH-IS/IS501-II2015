@@ -29,7 +29,7 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="8CA51279-3014-2FEF-15DE-8EDB47E585B4" name="TBL_CARGOS_TRIPULANTES_PK">
+<ind_PK_UK id="8CA51279-3014-2FEF-15DE-8EDB47E585B4" name="TBL_CARGOS_TRIP_PK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 03:24:37 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>

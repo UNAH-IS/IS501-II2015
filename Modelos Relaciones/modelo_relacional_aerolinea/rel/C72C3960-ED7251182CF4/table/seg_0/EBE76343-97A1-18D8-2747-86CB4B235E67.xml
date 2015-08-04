@@ -65,7 +65,7 @@
 <colUsage columnID="3C4E0DE3-0193-7812-76AF-71DBA0AD4966"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="957A6DB0-B2F5-8EE6-7BF4-3806E6007803" name="TBL_ASIENTOS_TBL_AVIONES_FK">
+<ind_PK_UK id="957A6DB0-B2F5-8EE6-7BF4-3806E6007803" name="TBL_ASIE_TBL_AVIONES_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:37:48 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
@@ -75,7 +75,7 @@
 <colUsage columnID="0FEAA138-8C54-A7A0-7EE0-087F445E56B9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="EBDC106E-7CB1-9CBB-4EDE-BB0240771A6D" name="TBL_ASIENTOS_TBL_TIPOS_ASIENTOS_FK">
+<ind_PK_UK id="EBDC106E-7CB1-9CBB-4EDE-BB0240771A6D" name="TBL_ASIE_TBL_TP_ASI_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:38:32 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>

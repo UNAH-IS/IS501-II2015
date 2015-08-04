@@ -74,7 +74,7 @@
 <colUsage columnID="25AC125B-0281-B2AE-7CED-833219D3AA07"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D022B836-586B-0F6E-709F-0E68CE633703" name="TBL_VUELOS_TBL_AVIONES_FK">
+<ind_PK_UK id="D022B836-586B-0F6E-709F-0E68CE633703" name="TBL_V_TBL_AVIONES_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:48:56 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
@@ -84,7 +84,7 @@
 <colUsage columnID="FAE7E0BF-E4CA-CD4C-C60D-5E8E85DFA4A3"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5B7555AD-17B3-F71F-8044-6C54A5A8789C" name="TBL_VUELOS_TBL_RUTAS_FK">
+<ind_PK_UK id="5B7555AD-17B3-F71F-8044-6C54A5A8789C" name="TBL_V_TBL_RUTAS_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:51:05 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E5B4C0A8-7614-D5AD-AEFA-4340354A43D4" containerWithKeyObject="208C152E-531B-A6D4-5E0E-16D4D9975AC1" localFKIndex="D022B836-586B-0F6E-709F-0E68CE633703" name="TBL_VUELOS_TBL_AVIONES_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E5B4C0A8-7614-D5AD-AEFA-4340354A43D4" containerWithKeyObject="208C152E-531B-A6D4-5E0E-16D4D9975AC1" localFKIndex="D022B836-586B-0F6E-709F-0E68CE633703" name="TBL_V_TBL_AVIONES_FK">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-09 17:48:56 UTC</createdTime>
 <ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>

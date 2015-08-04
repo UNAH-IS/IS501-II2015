@@ -68,12 +68,13 @@ Categoria
 Unidad de medida (Abreviatura en minusculas)
 Cantidad de productos
 Monto de la venta*/
-
+CREATE OR REPLACE VIEW VW_DETALLE_FACTURACION AS
 SELECT  A.codigo_factura, B.nombre_cliente, 
         C.nombre_empleado AS nombre_cajero,
         D.nombre_sucursal,
         E.nombre_empleado AS nombre_administrador,
         TO_CHAR(A.FECHA,'DD/MM/YYYY') AS fecha_venta,
+        TO_CHAR(A.FECHA,'YYYYMMDD') AS fecha_orden,
         TO_CHAR(A.FECHA,'MONTH') AS mes_venta,
         TO_CHAR(A.FECHA,'YYYY') AS anio_venta,
         F.cantidad,
@@ -81,7 +82,7 @@ SELECT  A.codigo_factura, B.nombre_cliente,
         H.marca,
         I.categoria,
         F.unidad,
-        0 AS monto_venta
+        125 AS monto_venta
 FROM tbl_facturas A
 INNER JOIN tbl_clientes B
 ON (A.codigo_cliente = b.codigo_cliente)
@@ -98,10 +99,11 @@ ON (F.codigo_producto = G.codigo_producto)
 INNER JOIN tbl_marcas H
 ON (G.codigo_marca = H.codigo_marca)
 INNER JOIN tbl_categorias I
-ON (G.codigo_categoria = I.codigo_categoria)
-;
+ON (G.codigo_categoria = I.codigo_categoria);
 
 
+SELECT * 
+FROM VW_DETALLE_FACTURACION;
 
 
 

@@ -59,6 +59,19 @@
 <colAssociation fkAssociation="DB4811A2-01DB-59C5-70FD-53DC19AD85FC" referredColumn="61DA9C76-090F-E29A-33C6-DE9F99A59925"/>
 </associations>
 </Column>
+<Column name="CODIGO_ASIENTO" id="950EFC10-B3E7-6E4E-DB3F-8782190AE63D">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-07-29 15:32:11 UTC</createdTime>
+<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DAF0201-0A4C-5A6B-DDC1-F0E15DA6941D" referredColumn="3C4E0DE3-0193-7812-76AF-71DBA0AD4966"/>
+</associations>
+</Column>
 <Column name="TICKET" id="3E957A03-7845-7BDD-31CA-9F7EEDF69143">
 <createdBy>Konqueror</createdBy>
 <createdTime>2015-06-11 17:19:28 UTC</createdTime>
@@ -102,6 +115,7 @@
 <colUsage columnID="ABE25914-6728-688A-9BB6-D4FA0673FFDC"/>
 <colUsage columnID="87721239-6B66-FF67-E283-8AF0D9609003"/>
 <colUsage columnID="0F099250-C290-A342-49FB-DC4A5E15E36A"/>
+<colUsage columnID="950EFC10-B3E7-6E4E-DB3F-8782190AE63D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="49BFAF5F-AD84-C52A-9255-DD9F74BB284E" name="TBL_FD_TBL_F_FK">
@@ -142,6 +156,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="0F099250-C290-A342-49FB-DC4A5E15E36A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81FBA74D-7559-D499-C653-BAF080E3B4C5" name="TBL_F_DETALLE_TBL_ASIE_FK">
+<createdBy>Erick Marín</createdBy>
+<createdTime>2015-07-29 15:32:11 UTC</createdTime>
+<ownerDesignName>modelo_relacional_aerolinea</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="950EFC10-B3E7-6E4E-DB3F-8782190AE63D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
